@@ -4,7 +4,15 @@
 // Test your function with different numbers of arguments.
 
 function subtract(...numbers) {
-  // Your code here
+   let difference = numbers[0];
+  
+   numbers.forEach((num, i) => {
+    if (i > 0) {
+      num -= difference
+    }
+   })
+  
+  return difference;// Your code here
 }
 
 console.log(subtract(10, 2, 3)); // Example usage
