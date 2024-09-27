@@ -3,7 +3,10 @@
 // Test your function by calculating the sum of the array and logging the result to the console.
 
 function sumOfDigits(n) {
-  // Your code here
-}
+  
+  return n.reduce((storage, current) => storage + current, 0);
+
+  } 
+
 
 console.log(sumOfDigits([1, 3, 7, 1, 8])); // 20
