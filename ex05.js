@@ -6,7 +6,10 @@
 const person = {
   firstName: 'John',
   lastName: 'Doe',
-  // Your code here
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+    // Your code here
 };
 
 console.log(person.fullName());
